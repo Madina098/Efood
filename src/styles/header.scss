@@ -1,0 +1,45 @@
+.header {
+    padding-top: 54px;
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        color: $darkblue;
+        font-size: 33px;
+        font-weight: 500;
+        letter-spacing: 1.65px;
+        span {
+            color: #FF6838;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        column-gap: 58px;
+    }
+    &__links {
+        display: flex;
+        column-gap: 60px;
+    }
+    &__link {
+        color: $darkblue;
+        font-size: 18px;
+        font-weight: 400;
+        &:hover{
+            color: #FF6838;
+        }
+    }
+    &__btn {
+        padding: 14px 27px;
+        background: $orange;
+        border-radius: 5px;
+        box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}

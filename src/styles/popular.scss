@@ -1,0 +1,113 @@
+.popular {
+    padding-bottom: 87px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 55px 0 39px;
+    }
+    &__item {
+        border-radius: 8px;
+        background: #fff;
+        padding: 5px 40px;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        color: $darkblue;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        span path {
+            fill: $darkblue;
+        }
+        &:hover {
+            border-radius: 8px;
+            background:$orange;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+            color: #fff;
+           span path {
+            fill: #fff;
+           }
+        }
+        &.active {
+            border-radius: 8px;
+            background: $orange;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+            color: #fff;
+            
+            span path {
+                    fill: #fff;
+                }
+        }
+    }
+    &__content {
+        display: none;
+       &.active {
+        display: block;
+       } 
+    &-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 25px;
+        margin-top: 40px;
+        .swiper-pagination-bullet {
+           width: 12px;
+           height: 12px; 
+           background: #D1D2DC;
+           &-active {
+            background: $orange;
+           }
+            }
+        }
+    }
+    &__pagination {
+        width: 60px !important;
+    }
+    &__next, &__prev {
+        cursor: pointer;
+        svg path {
+          fill: $orange;  
+        }
+    &.swiper-button-disabled {
+        svg path {
+                fill: #D1D2DC;
+            }
+    }
+    }
+    &__card {
+        width: 100%;
+        padding: 22px 13px;
+        border-radius: 12px;
+        background: #FFF;
+        text-align: center;
+        &-img {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+        }
+        &-star {
+            margin-bottom: 27px;
+        }
+        &-title {
+            color: $darkblue;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    &-price {
+        color: $darkblue;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 9px 0 11px ;
+    }
+    &-btn {
+        padding: 7px 13px;
+        border-radius: 2px;
+        background: $orange;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+    }
+ }
+}

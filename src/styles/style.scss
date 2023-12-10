@@ -1,0 +1,50 @@
+ @import url('https: //fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap'); 
+ @import'../libs/css/fontello.css';  
+    
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik" , sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    transition: .5s;
+}
+
+.body {
+    background: linear-gradient(114deg, rgba(239, 239, 239, 0.00) -2.01%, rgba(239, 239, 239, 0.20) 103.74%);
+    backdrop-filter: blur(388.5px);
+}
+
+$orange: #FF7A50;
+$darkblue: #363853;
+
+.container {
+    max-width: 1169px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    color: $darkblue;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    span {
+        color : $orange;
+    }
+}
+
+
+@import"header";
+@import"super";
+@import"popular";
+@import"stay";
+@import"top";
+@import"app";
+@import"review";
+@import"offer";
+@import"footer";

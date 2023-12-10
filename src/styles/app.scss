@@ -1,0 +1,31 @@
+.app {
+    padding-bottom: 166px;
+    &__content {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+    &__info {
+        width: 47%;
+    }
+    &__right {
+        width: 53%;
+        &-img {
+            width: 100%;
+        }
+    }
+    .title {
+        text-align: left;
+    }
+    &__desc {
+        color: $darkblue;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    &__links {
+        display: flex;
+        column-gap: 35px;
+    }
+}
